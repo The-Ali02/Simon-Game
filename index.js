@@ -5,6 +5,7 @@ var user = [];
 var gamePattern = [];
 $(document).keypress(function() {
   if (!started) {
+    level++;
     $("#level-title").text("Level " + level);
     nextSequence();
     started = true;
